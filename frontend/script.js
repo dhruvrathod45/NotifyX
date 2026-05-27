@@ -1,5 +1,5 @@
 const socket =
-io("http://localhost:5000");
+io("https://notifyx-r7ia.onrender.com/");
 
 const input =
 document.getElementById(
