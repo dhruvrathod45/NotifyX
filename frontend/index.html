@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>NotifyX</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+
+  <div class="background-overlay"></div>
+  <div class="grid"></div>
+
+  <!-- MAIN -->
+
+  <main class="hero">
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+      <div class="logo">
+
+        <div class="logo-dot"></div>
+
+        <span>
+          NOTIFYX
+        </span>
+
+      </div>
+
+      <ul>
+
+        <li>WHY US</li>
+        <li>REALTIME</li>
+        <li>FEATURES</li>
+        <li>ANALYTICS</li>
+
+      </ul>
+
+      <button class="contact-btn">
+
+        Contact Us
+
+      </button>
+
+    </nav>
+
+    <!-- HUGE TEXT -->
+
+    <div class="huge-text">
+
+      NOTIFY<br>
+      X
+
+    </div>
+
+    <!-- CENTER CARD -->
+
+    <div class="main-card">
+
+      <div class="card-circle"></div>
+
+      <div class="card-content">
+
+        <p class="mini-text">
+
+          Realtime Notification System
+
+        </p>
+
+        <h2>
+
+          Premium Live Alerts
+
+        </h2>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT FLOATING -->
+
+    <div class="right-info">
+
+      <h4>
+
+        LIVE ENGINE
+
+      </h4>
+
+      <p>
+
+        Engineered for realtime
+        notification delivery
+        and instant updates.
+
+      </p>
+
+    </div>
+
+    <!-- STATS -->
+
+    <div class="stats-card">
+
+      <div class="stats-line"></div>
+
+      <div class="stats-content">
+
+        <h3 id="notification-count">
+
+          0
+
+        </h3>
+
+        <p>
+
+          Notifications Sent
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- INPUT -->
+
+    <section class="notification-box">
+
+      <input
+        type="text"
+        id="notification-input"
+        placeholder="Write notification..."
+      />
+
+      <button id="send-btn">
+
+        SEND →
+
+      </button>
+
+    </section>
+
+  </main>
+
+  <!-- FEED -->
+
+  <section class="feed-section">
+
+    <h2>
+
+      Live Feed
+
+    </h2>
+
+    <div
+      id="notifications-container"
+      class="notifications-container"
+    ></div>
+
+  </section>
+
+  <!-- TOAST -->
+
+  <div id="toast-container"></div>
+
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
